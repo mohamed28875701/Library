@@ -16,17 +16,10 @@
             <button id="add">Add book</button>
             
         </div>
-        <div class="book-display">
-            <div class="card">
-                <div>blah</div>
-                <div>Authors name</div>
-                <div>number of pages</div>
-                <button id="read">read</button>
-                <button id="del">delete book</button>
-            </div>
+        <div class="book-display" id="display">
         </div>
     </main>
-    <div class="add-modal">
+    <div class="add-modal" id="modal">
         <div id="add-book">Add a book</div>
         <form action="/" method="post">
             <label for="book-name">name of the book</label>
@@ -39,8 +32,9 @@
                 <label for="read">read</label>
                 <input type="checkbox" name="read" id="read">
             </div>
+            <button type="submit" id="sub">Submit</button>
         </form>
-        <button type="submit" id="sub">Submit</button>
+        
     </div>
     <div class="footer">Made by Mohamed28875701</div>
 </body>
