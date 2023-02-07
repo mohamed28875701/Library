@@ -13,14 +13,15 @@
     </div>
     <main class="content">
         <div class="buttons">
-            <button id="add">Add</button>
-            <button id="show">Books</button>
+            <button id="add">Add book</button>
+            
         </div>
         <div class="book-display">
 
         </div>
     </main>
     <div class="add-modal">
+        <div id="add-book">Add a book</div>
         <form action="/" method="post">
             <label for="book-name">name of the book</label>
             <input type="text" id="book-name" name="book-name">
@@ -28,10 +29,12 @@
             <input type="text" id="author" name="author">
             <label for="pages">number of pages</label>
             <input type="number" id="pages" name="pages">
-            <label for="read">read</label>
-            <input type="checkbox" name="read" id="read">
+            <div class="check">
+                <label for="read">read</label>
+                <input type="checkbox" name="read" id="read">
+            </div>
         </form>
-        <button type="submit">Submit</button>
+        <button type="submit" id="sub">Submit</button>
     </div>
     <div class="footer">Made by Mohamed28875701</div>
 </body>
