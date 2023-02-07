@@ -118,3 +118,37 @@ form{
     background-color: #96ADCF;
 
 }
+.book-display{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+
+}
+.card{
+    background-color: #6E7888;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    color: #96ADCF;
+    font-size:24px ;
+    gap:20px;
+    padding: 22px;
+    align-items: center;
+    border-radius: 12px;
+    margin: 12px;
+}
+#del,#read{
+    background-color: #1F2937;
+    height: 40px;
+    width: 250px;
+    border-radius: 12px;
+    color: #96ADCF;
+    font-size: 20px;
+}
+#del:hover{
+    background-color:crimson;
+    border-color: crimson;
+}
+#read:hover{
+    background-color: #96ADCF;
+    color: #1F2937;
+}
