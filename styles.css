@@ -1,16 +1,79 @@
 body{
     margin: 0%;
-    
+    background-color: #1F2937;    
     
 }
 .add-modal{
-    visibility: hidden;
+    visibility:hidden;
+    position: absolute  ;
+    z-index: 1;
+    top: 30%;
+    right: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    width: 300px;
+    color: #1F2937;
+    padding: 12px;
+    font-size: 20px;
+    background-color: #6E7888;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    border-radius:10px ;
+    height: 30px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1F2937;
+    background-color: #96ADCF;
+    margin: 8px 0px;
+}
+input:focus{
+    outline: none;
+}
+.check{
+    display: flex;
+    align-items: center ;
+    gap: 12px;
+    margin: 12px 0px;
+    
+}
+.add-modal > button{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #96ADCF;
+    background-color: #1F2937;
+    border: none;
+    position: relative;
+    right: -90px;
+}
+.add-modal > button:hover{
+    background-color: #96ADCF;
+    color: #1F2937;
+}
+input[type="checkbox"]{
+    margin: 0%;
+    height: 20px;
+    width: 20px;
+    
+}
+#add-book{
+    text-align: center;
+    font-size: 24px    ;
+    padding-bottom:8px ;
+}
+form{
+    display: flex;
+    flex-direction: column;
 }
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1F2937;
+    
     color:#96ADCF;
     font-size: 28px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -21,7 +84,7 @@ body{
     display: flex;
     justify-content: center;
     
-    background-color: #1F2937;
+    
     color:#96ADCF;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
@@ -30,4 +93,28 @@ body{
     left: 0;
     width: 100%;
     padding: 8px 0px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    padding:12px ;
+    
+}
+#add{
+    height: 50px;
+    width: 150px;
+    border-radius: 12px;
+    background-color: #6E7888;
+    color: #96ADCF;
+    border: 1px solid #96ADCF;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#add:hover{
+    color: #1F2937;
+    background-color: #96ADCF;
+
 }
